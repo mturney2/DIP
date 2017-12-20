@@ -2,9 +2,9 @@
 # Prerequesites
 
 ## Prerequisites to Run Demo
-1. There are two options to execute the project code. 1) On GPU with MATLAB 2) Directly on the GPU
+1. There are two options to execute the project code. On GPU with MATLAB or execute directly on the GPU. MATLAB is perferred to maintain a similar algorithm framework.
 
-## Steps to Run MATLAB Demo
+## Steps to Run MATLAB Demo (preferred)
 1. Clone the code repository `./Demo_MATLAB` and download the files to a local directory. 
 2. Demo_MATLAB contains a compiled MEX binary `Corr2GPUMex_Final.mexa64` which is called in `main.m` for displacement estimation. The MEX was compiled for a 64-bit Linux OS. 
 3. If neccessary, the MEX can be recompiled using the following two lines: 
@@ -14,6 +14,7 @@
 ```
 4. Run `main.m` in MATLAB. `main.m` will load two pre/post frames of ultrasound images and perform the displacement estimation using the GPU code.  
 5. Sample Output: 
+![Image of CODE_1](https://github.com/mturney2/Final-Project-Code/blob/master/Images/matlabOutput.PNG)
 ======>>>>> For a Windows system...
    
 ## Steps to Run CUDA Demo
