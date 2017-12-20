@@ -23,17 +23,18 @@
 ```
    > ./normXcorr2_FC 244 6224 244 6224 17 49 9 161 220 75
 ```
-    The input arguments associated with the execution call are: 
-    * Width of pre image
-    * Height of pre image
-    * Width of post image
-    * Height of post image
-    * Shift in X direction
-    * Shift in Y direction
-    * Kernel width
-    * Kernel height
-    * Number of displacement points in X direction
-    * Number of displacement points in Y direction
+
+The input arguments associated with the execution call are: 
+ * Width of pre image
+ * Height of pre image
+ * Width of post image
+ * Height of post image
+ * Shift in X direction
+ * Shift in Y direction
+ * Kernel width
+ * Kernel height
+ * Number of displacement points in X direction
+ * Number of displacement points in Y direction
 3. `Demo_C` also contains a Makefile which can be used to recompile the code, if neccessary. 
 
 
