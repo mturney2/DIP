@@ -1,18 +1,25 @@
 # Accelerating Ultrasound Elasticity Imaging with a CUDA-MATLAB Approach
+# Prerequesites
 
-## Contents  
-* Code Versions from V0 to V3  
-* Final Code w/ and w/o surface fitting
-* Mex and MATLAB work
-* MATLAB Verification
-* Literature Resources
-* Meeting Notes
-* Report
-* Presentation
+## Prerequisites to Run Demo
+1. There are two options to execute the project code. 1) On GPU with MATLAB 2) Directly on the GPU
 
-## Instructions to Run Demo
-1. Download `./DEMO` and `./Final Code with Surface Fit`
-2.
+## Steps to Run MATLAB Demo
+1. Clone the code repository `./Demo_MATLAB` and download the files to a local directory. 
+2. Demo_MATLAB contains a compiled MEX binary `Corr2GPUMex_Final.mexa64` which is called in `main.m` for displacement estimation. The MEX was compiled for a 64-bit Linux OS. 
+3. If neccessary, the MEX can be recompiled using the following two lines: 
+```
+   > nvcc -O0 -std=c++11 -c normXcorr_Host_Mex_Final.cu -Xcompiler -fPIC -I/usr/local/MATLAB/R2013a/extern/include;
+   > mex Corr2GPUMex_Final.cpp normXcorr_Host_Mex_Final.o -lcudart -L"/local/linux/cuda"
+```
+4. Run `main.m` in MATLAB. `main.m` will load two pre/post frames of ultrasound images and perform the displacement estimation using the GPU code.  
+5. Sample Output: 
+======>>>>> For a Windows system...
+   
+## Steps to Run CUDA Demo
+0. A C demo is also included in case the system doesn't have MATLAB support. 
+1. Clone the code repository `./Demo_C` and download the files to a local directory. 
+2. 
 3.
 4.
 
