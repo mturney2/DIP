@@ -18,10 +18,23 @@
    
 ## Steps to Run CUDA Demo
 0. A C demo is also included in case the system doesn't have MATLAB support. 
-1. Clone the code repository `./Demo_C` and download the files to a local directory. 
-2. 
-3.
-4.
+1. Clone the code repository `./Demo_C` and download the files to a local directory. `Demo_C` contains the neccessary input files. 
+2. `Demo_C` contains a precompiled binary `normXcorr2_FC` which can be executed using the following syntax: 
+```
+   > ./normXcorr2_FC 244 6224 244 6224 17 49 9 161 220 75
+```
+    The input arguments associated with the execution call are: 
+    * Width of pre image
+    * Height of pre image
+    * Width of post image
+    * Height of post image
+    * Shift in X direction
+    * Shift in Y direction
+    * Kernel width
+    * Kernel height
+    * Number of displacement points in X direction
+    * Number of displacement points in Y direction
+3. `Demo_C` also contains a Makefile which can be used to recompile the code, if neccessary. 
 
 
 
