@@ -39,6 +39,9 @@ The input arguments associated with the execution call are:
  * Number of displacement points in Y direction
 3. `Demo_C` also contains a Makefile which can be used to recompile the code, if neccessary. 
 
+4. Sample Output:  
+![Image of CODE_1](https://github.com/mturney2/Final-Project-Code/blob/master/Images/eulerOut.PNG)
+
 
 
 ## Example
