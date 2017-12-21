@@ -1,8 +1,9 @@
 # Accelerating Ultrasound Elasticity Imaging with a CUDA-MATLAB Approach
-# Prerequesites
+
+# Instructions
 
 ## Prerequisites to Run Demo
-1. There are two options to execute the project code. On GPU with MATLAB or execute directly on the GPU. MATLAB is perferred to maintain a similar algorithm framework.
+1. There are two options to execute the project code. On GPU with MATLAB or by executing directly on the GPU as we have typically done for this course. MATLAB is perferred to maintain a similar algorithm framework. Both of the codes have been developed in the Varghese Ultrasound Lab's GPU, the Tesla K40. However, we have also tested the C version in the euler99 node(sample image below). The timings and accuracy reported in the course paper is based on Tesla K40. 
 
 ## Steps to Run MATLAB Demo (preferred)
 1. Clone the code repository `./Demo_MATLAB` and download the files to a local directory. 
@@ -18,7 +19,7 @@
 
 ======>>>>> For a Windows system...
    
-## Steps to Run CUDA Demo
+## Steps to Run C/CUDA Demo
 0. A C demo is also included in case the system doesn't have MATLAB support. 
 1. Clone the code repository `./Demo_C` and download the files to a local directory. `Demo_C` contains the neccessary input files. 
 2. `Demo_C` contains a precompiled binary `normXcorr2_FC` which can be executed using the following syntax: 
